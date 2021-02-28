@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 
-
 const App = ({anecdotes}) => {
   const [selected, setSelected] = useState(0)
   const [points, setPoints] = useState({
@@ -78,9 +77,6 @@ const App = ({anecdotes}) => {
         ? <p>Be first to vote</p>
         : <Display anecdotes={anecdotes[mostVotes]} votes={points[mostVotes]} />
       }
-        
-       
-      
     </div>
 
 
